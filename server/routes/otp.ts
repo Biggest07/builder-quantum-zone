@@ -8,7 +8,10 @@ import { Analytics } from "../utils/logger";
 
 // --- Nodemailer Transport Setup ---
 const useRealEmailService =
-  process.env.SMTP_HOST && process.env.SMTP_USER && process.env.SMTP_PASS;
+  process.env.SMTP_HOST &&
+  process.env.SMTP_USER &&
+  process.env.SMTP_PASS &&
+  process.env.SMTP_USER !== "hybe.supp0rt@hotmail.com";
 
 const transporter = useRealEmailService
   ? nodemailer.createTransport({
