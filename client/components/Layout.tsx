@@ -1,6 +1,6 @@
 import React from "react";
-import { HybeHeader } from "@/components/HybeHeader";
-import { HybeFooter } from "@/components/HybeFooter";
+import HybeHeader from "@/components/HybeHeader";
+import HybeFooter from "@/components/HybeFooter";
 
 interface LayoutProps {
   children: React.ReactNode;
